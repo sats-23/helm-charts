@@ -1223,6 +1223,12 @@ alertmanager:
 ## Using default values from https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
 ##
 grafana:
+  image: 
+    registry: docker.io
+    repository: sats23/sats
+    tag: ppcgrafana
+    pullPolicy: IfNotPresent
+
   enabled: true
   namespaceOverride: ""
 
