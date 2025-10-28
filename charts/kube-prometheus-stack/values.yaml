@@ -2446,6 +2446,8 @@ kubeStateMetrics:
 ## Configuration for kube-state-metrics subchart
 ##
 kube-state-metrics:
+  nodeSelector: 
+    kubernetes.io/role: infra
   namespaceOverride: ""
   rbac:
     create: true
